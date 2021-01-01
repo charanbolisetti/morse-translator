@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse-Translator</title>
+    <style>
+        :root {
+            --black: #333333;
+        }
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 20vh;
+            display: block;
+            margin-block-start: 2rem;
+            margin-block-end: 2rem;
+            
+        }
+        #output {
+            box-sizing: border-box;
+            width: 100%;
+            display: block;
+            min-height: 10vh;
+            max-height: 20vh;
+            overflow: scroll;
+            border: 1px solid var(--black);
+        }
+        .navigation {
+            background-color: red;
+            width: auto;
+            color:black;
+            text-align: center;
+            width: auto;
+            height: 10vh;
+            padding: 1rem;
+        }
+
+        .textalign {
+            padding-top: 1rem;
+            font-size: x-large;
+            font-weight: bold;
+            
+        }
+        
+        body {
+            font-family: cursive;
+            margin: 0;
+        }
+
+        #btn-translate {
+            background-color: red;
+            border: none;
+            margin: 1rem 0rem;
+            padding: 1rem 2rem;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        main {
+            margin:auto;
+            padding: 1rem;
+            max-width: 600px;
+        }
+
+        .footer {
+            background-color: red;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        textarea {
+            background-color: rgb(165, 236, 22);
+            font-size: large;
+        }
+
+        #output{
+            background-color:  rgb(165, 236, 22);
+        }
+         p {
+            margin: auto;
+            max-width: 600px;
+            padding-bottom: 1rem;
+         }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <div class="textalign">Morse Translator</div>
+    </nav>
+
+    <main>
+        <textarea id="txt-input" placeholder="keep your sentence here it will convert into Morse"></textarea>
+    
+        <button id="btn-translate">Translate to Morse</button>
+        <div style="font-size: larger;">The output is here👇👇</div>
+        <div id="output"></div>
+
+    </main>
+
+    <footer class="footer">
+        <div style="font-weight: bold;">about</div>
+        <p>Convert from English to Morse Code. Morse code is a method of transmitting text information as a
+             series of on-off tones, lights, or clicks that can be directly understood by a skilled listener</p>
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
